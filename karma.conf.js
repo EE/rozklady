@@ -12,6 +12,7 @@ files = [
     'app/js/vendor/angular-1.1.5.js',
     'test/lib/angular-mocks-1.1.5.js',
 
+    'app/js/config.js',
     'app/js/app.js',
     'app/js/controllers/*.js',
 

@@ -23,6 +23,8 @@
     "maxlen": 120,
 
     "globals": {
-        "angular": false
+        "angular": false,
+
+        "PROXY_URL": true
     }
 }

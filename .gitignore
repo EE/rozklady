@@ -5,3 +5,4 @@ dist
 .sass-cache
 /app/styles/*.css
 /app/styles/*.css.map
+/app/js/config.js
