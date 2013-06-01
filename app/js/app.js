@@ -12,6 +12,10 @@
                     templateUrl: 'views/station-details.html',
                     controller: 'StationDetailsCtrl',
                 })
+                .when('/train/:trainId', {
+                    templateUrl: 'views/train-details.html',
+                    controller: 'TrainDetailsCtrl',
+                })
                 .otherwise({
                     redirectTo: '/'
                 });

@@ -57,3 +57,16 @@ a {
     }
 }
 
+.train-info {
+    tbody {
+        tr:nth-child(2n + 1) {
+            background-color: #bcbcbc;
+        }
+        tr:nth-child(2n) {
+            background-color: #f5f5f5;
+        }
+        tr.current {
+            background-color: red;
+        }
+    }
+}

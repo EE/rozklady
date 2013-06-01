@@ -1,0 +1,30 @@
+<div ng-controller="TrainDetailsCtrl">
+    <table class="train-info">
+        <thead>
+        <tr>
+            <td>Train number</td>
+            <td>Date</td>
+            <td>Start place</td>
+            <td>Final place</td>
+            <td>Station</td>
+            <td>Planned arrival</td>
+            <td>Arrival delay</td>
+            <td>Planned departure</td>
+            <td>Departure delay</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="row in table" class="{{ row.current ? 'current' : '' }}">
+            <td>{{ row.trainNumber }}</td>
+            <td>{{ row.date }}</td>
+            <td>{{ row.startPlace }}</td>
+            <td>{{ row.endPlace }}</td>
+            <td>{{ row.station }}</td>
+            <td>{{ row.plannedArrival }}</td>
+            <td>{{ row.arrivalDelay }}</td>
+            <td>{{ row.plannedDeparture }}</td>
+            <td>{{ row.departureDelay }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
