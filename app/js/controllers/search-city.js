@@ -12,7 +12,6 @@
 
     angular.module('rozkladyApp')
         .controller('SearchCityCtrl', function ($scope, $http, autocompleteCity) {
-            $scope.autocompleteResult = 'dupa';
             $scope.searchCity = function () {
                 $http({method: 'GET', url: 'http://127.0.0.1:8007/info_pasazer/index_set.php?stacja=' + $scope.city})
                     .success(function (data) {
