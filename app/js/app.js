@@ -8,6 +8,10 @@
                     templateUrl: 'views/main.html',
                     controller: 'MainCtrl'
                 })
+                .when('/search-city', {
+                    templateUrl: 'views/search-city.html',
+                    controller: 'SearchCityCtrl'
+                })
                 .otherwise({
                     redirectTo: '/'
                 });
