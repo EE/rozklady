@@ -1,13 +1,13 @@
 {
-  "name": "Rozklady",
-  "description": "Track polish trains",
-  "launch_path": "/app/index.html",
-  "icons": {
-    "128": "/app/favicon.ico"
-  },
-  "developer": {
-    "name": "Laboratorium.EE",
-    "url": "http://laboratorium.ee"
-  },
-  "default_locale": "en"
+    "name": "Rozklady",
+    "description": "Track polish trains",
+    "launch_path": "/app/index.html",
+    "icons": {
+        "128": "/app/favicon.ico"
+    },
+    "developer": {
+        "name": "Laboratorium.EE",
+        "url": "http://laboratorium.ee"
+    },
+    "default_locale": "en"
 }
