@@ -18,9 +18,7 @@
             this.stationDetails = function stationDetails(stationId) {
                 return $http.get(PROXY_URL + '/info-pasazer/index3.php?nr_sta=' + stationId)
                     .then(function (response) {
-                        var tables$ = $($.parseHTML(response.data)).find('table.contacts');
-                        console.log(tables$);
-                        return tables$;
+                        return $($.parseHTML(response.data)).find('table.contacts').addBack('table.contacts');
                     });
             };
         });

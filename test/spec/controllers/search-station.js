@@ -1,12 +1,12 @@
 (function () {
     'use strict';
 
-    describe('Controller: SearchCityCtrl', function () {
+    describe('Controller: SearchStationCtrl', function () {
 
         // load the controller's module
         beforeEach(module('rozkladyApp'));
 
-        var SearchCityCtrl, scope, $httpBackend,
+        var SearchStationCtrl, scope, $httpBackend,
             stalowaWolaSearchUrl = PROXY_URL + '/info-pasazer/index_set.php?stacja=Stalowa Wola';
 
         // Initialize the controller and a mock scope
@@ -22,7 +22,7 @@
                     '</tbody></table>');
 
             scope = $rootScope.$new();
-            SearchCityCtrl = $controller('SearchCityCtrl', {
+            SearchStationCtrl = $controller('SearchStationCtrl', {
                 $scope: scope
             });
         }));

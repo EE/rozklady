@@ -3,7 +3,7 @@
 
     <ul class="search-list">
         <li ng-repeat="station in autocompleteResult">
-            <a class="result" data-data="{{ station.data }}">{{ station.name }}</a>
+            <a class="result" href="{{ station.href }}">{{ station.name }}</a>
         </li>
     </ul>
 </div>

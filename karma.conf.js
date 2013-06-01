@@ -14,6 +14,7 @@ files = [
 
     'app/js/config.js',
     'app/js/app.js',
+    'app/js/services/*.js',
     'app/js/controllers/*.js',
 
     'test/mock/**/*.js',
