@@ -5,7 +5,7 @@
         .factory('autocompleteCity', function ($http) {
             return {
                 async: function(city) {
-                    return $http.get(PROXY_URL + '/info_pasazer/index_set.php?stacja=' + city)
+                    return $http.get(PROXY_URL + '/info-pasazer/index_set.php?stacja=' + city)
                         .then(function (response) {
                             var links = [];
                             $($.parseHTML(response.data)).find('td a').each(function (_i, el) {
