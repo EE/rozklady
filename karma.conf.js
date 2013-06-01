@@ -1,3 +1,4 @@
+/* jshint undef: false */
 // Karma configuration
 
 // base path, that will be used to resolve files and exclude
@@ -5,14 +6,17 @@ basePath = '';
 
 // list of files / patterns to load in the browser
 files = [
-  JASMINE,
-  JASMINE_ADAPTER,
-  'app/bower_components/angular/angular.js',
-  'app/bower_components/angular-mocks/angular-mocks.js',
-  'app/scripts/*.js',
-  'app/scripts/**/*.js',
-  'test/mock/**/*.js',
-  'test/spec/**/*.js'
+    JASMINE,
+    JASMINE_ADAPTER,
+    'app/js/vendor/jquery-2.0.2.js',
+    'app/js/vendor/angular-1.1.5.js',
+    'test/lib/angular-mocks-1.1.5.js',
+
+    'app/js/app.js',
+    'app/js/controllers/*.js',
+
+    'test/mock/**/*.js',
+    'test/spec/**/*.js'
 ];
 
 // list of files to exclude

@@ -23,6 +23,13 @@
     "maxlen": 120,
 
     "globals": {
-        "angular": false
+        "angular": false,
+        "describe": false,
+        "it": false,
+        "beforeEach": false,
+        "afterEach": false,
+        "inject": false,
+        "module": false,
+        "expect": false
     }
 }
