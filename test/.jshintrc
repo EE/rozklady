@@ -30,6 +30,8 @@
         "afterEach": false,
         "inject": false,
         "module": false,
-        "expect": false
+        "expect": false,
+
+        "PROXY_URL": true
     }
 }
