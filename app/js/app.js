@@ -6,7 +6,7 @@
             $routeProvider
                 .when('/', {
                     templateUrl: 'views/search-station.html',
-                    controller: 'StationSearchCtrl',
+                    controller: 'SearchStationCtrl',
                 })
                 .when('/station/:stationId', {
                     templateUrl: 'views/station-details.html',
