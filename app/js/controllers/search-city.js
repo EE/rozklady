@@ -9,7 +9,8 @@
                         .then(function (response) {
                             var links = [];
                             $($.parseHTML(response.data)).find('td a').each(function (_i, el) {
-                                links.push({name: $(el).text(), href: $(el).attr('href')});
+                                var el$ = $(el);
+                                links.push({name: el$.text(), data: el$.attr('href')});
                             });
                             return links;
                         });

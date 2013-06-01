@@ -1,9 +1,9 @@
 <div ng-controller="SearchCityCtrl">
-    <input type="text" name="search-city" id="search-city" ng-model="city" ng-change="searchCity()">
+    <input type="text" name="search-city" id="search-city-input" ng-model="city" ng-change="searchCity()">
 
-    <ul>
+    <ul class="search-list">
         <li ng-repeat="station in autocompleteResult">
-            <a href="{{ station.href }}">{{ station.name }}</a>
+            <a class="result" data-data="{{ station.data }}">{{ station.name }}</a>
         </li>
     </ul>
 </div>
