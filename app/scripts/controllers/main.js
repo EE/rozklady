@@ -1,10 +1,30 @@
 'use strict';
 
+angular.module('rozkladyApp', [], function ($provide) {
+    $provide.factory('autocompleteCity', ['$http', function (http) {
+        return function (city) {
+//            http.get('http://infopasazer.intercity.pl/index_set.php?stacja=' + city, function (result) {
+//
+//            });
+        };
+    }]);
+});
+
 angular.module('rozkladyApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+    .controller('SearchCityCtrl', function ($scope, $http, autocompleteCity) {
+        $scope.searchCity = function () {
+            $http({method: 'GET', url: 'http://infopasazer.intercity.pl/index_set.php?stacja=' + $scope.city})
+                .success(function (data) {
+                    $scope.$apply(function () {
+                        $scope.autocompleteResult = $scope.city;
+                    });
+                })
+                .error(function (data) {
+                    $scope.$apply(function () {
+                        $scope.autocompleteResult = 'error';
+                    });
+                });
+        };
+    });
+
+

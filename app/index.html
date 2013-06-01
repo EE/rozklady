@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="rozkladyApp">
   <head>
     <meta charset="utf-8">
     <title>Rozklady</title>
@@ -10,17 +10,15 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="rozkladyApp">
+  <body>
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view>
-        <p>Hello world</p>
+    <div class="container" ng-controller="SearchCityCtrl">
+        <input type="text" name="search-city" id="search-city" ng-model="city" ng-change="searchCity()"/>
+        <div class="debug">{{ autocompleteResult }}</div>
     </div>
 
-    <script src="components/angular/angular.js"></script>
-    <script src="components/angular-resource/angular-resource.js"></script>
-    <script src="components/angular-cookies/angular-cookies.js"></script>
-    <script src="components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="components/angular.js"></script>
 
     <!-- build:js scripts/scripts.js -->
     <script src="scripts/app.js"></script>
