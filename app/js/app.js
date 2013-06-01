@@ -5,8 +5,12 @@
         .config(function ($routeProvider) {
             $routeProvider
                 .when('/', {
-                    templateUrl: 'views/search-city.html',
-                    controller: 'SearchCityCtrl'
+                    templateUrl: 'views/search-station.html',
+                    controller: 'StationSearchCtrl',
+                })
+                .when('/station/:stationId', {
+                    templateUrl: 'views/station-details.html',
+                    controller: 'StationDetailsCtrl',
                 })
                 .otherwise({
                     redirectTo: '/'
