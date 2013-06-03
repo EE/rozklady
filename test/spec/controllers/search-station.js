@@ -7,7 +7,7 @@
         beforeEach(module('rozkladyApp'));
 
         var SearchStationCtrl, scope, $httpBackend,
-            stalowaWolaSearchUrl = PROXY_URL + '/info-pasazer/index_set.php?stacja=Stalowa Wola';
+            stalowaWolaSearchUrl = PROXY_URL + '/index_set.php?stacja=Stalowa Wola';
 
         // Initialize the controller and a mock scope
         beforeEach(inject(function ($controller, $rootScope, _$httpBackend_) {
@@ -16,9 +16,9 @@
                 .expectGET(stalowaWolaSearchUrl)
                 .respond('' +
                     '<table><tbody>' +
-                    '<tr><td><a href="http://example.com/1">Stalowa Wola</a></td></tr>' +
-                    '<tr><td><a href="http://example.com/2">Stalowa Wola Centrum</a></td></tr>' +
-                    '<tr><td><a href="http://example.com/3">Stalowa Wola Południe</a></td></tr>' +
+                    '<tr><td><a href="index3.php?nr_sta=65037">Stalowa Wola</a></td></tr>' +
+                    '<tr><td><a href="index3.php?nr_sta=65029">Stalowa Wola Centrum</a></td></tr>' +
+                    '<tr><td><a href="index3.php?nr_sta=65052">Stalowa Wola Południe</a></td></tr>' +
                     '</tbody></table>');
 
             scope = $rootScope.$new();
